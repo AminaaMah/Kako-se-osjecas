@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kako se osjećas?</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .emoji-img {
+            max-width: 200px;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <h1>KAKO SE OSJEĆAS?</h1>
+    <img class="emoji-img" src="https://www.katehetski-nadbiskupija-split.net/media/com_edocman/document/thumbs/upitnik-clipart.gif" alt="Upitnik slika">
+    <div class="button-container">
+        <button class="button" onclick="changeEmoji('https://emojicdn.elk.sh/😊')">Veselo</button>
+        <button class="button" onclick="changeEmoji('https://emojicdn.elk.sh/😠')">Ljuto</button>
+        <button class="button" onclick="changeEmoji('https://emojicdn.elk.sh/😢')">Tužno</button><br>
+        <button class="button" onclick="changeEmoji('https://emojicdn.elk.sh/😞')">Razočarano</button>
+        <button class="button" onclick="changeEmoji('https://emojicdn.elk.sh/😍')">Zaljubljeno</button>
+        <button class="button" onclick="changeEmoji('https://emojicdn.elk.sh/😃')">Uzbudjeno</button>
+    </div>
+
+    <script>
+        function changeEmoji(src) {
+            document.querySelector('.emoji-img').src = src;
+        }
+    </script>
+</body>
+</html>
+
+
+
+
